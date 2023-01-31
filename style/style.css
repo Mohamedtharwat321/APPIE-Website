@@ -1,0 +1,889 @@
+/* ************************ */
+/* Nav */
+/* ************************ */
+.hero {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 9.6rem;
+  padding: 0 9.6rem;
+}
+.main-header {
+  background-color: var(--royalblue);
+  position: relative;
+}
+.logo {
+  height: 2.8rem;
+  justify-self: start;
+}
+
+.nav-list {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: var(--darkblue);
+  font-size: 1.6rem;
+  font-weight: 450;
+}
+
+.getsarted {
+  padding: 1.6rem 3rem;
+  text-decoration: none;
+  color: white;
+  background-color: var(--pinq);
+}
+
+/* mobile nav */
+.hero-start {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  justify-self: end;
+}
+.btn-moblie-nav {
+  all: unset;
+  cursor: pointer;
+  display: none;
+}
+.fa-bars {
+  font-size: 3rem;
+  color: var(--darkblue);
+}
+.fa-xmark {
+  font-size: 4rem;
+  color: var(--darkblue);
+}
+.fa-xmark {
+  display: none;
+}
+
+/* sticky navigation */
+.sticky .main-header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  z-index: 999;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.973);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+.sticky .how-it-work {
+  margin-top: 9.6rem;
+  /* take the height of the nav */
+}
+
+/* ************************ */
+/* Ready-section */
+/* ************************ */
+.ready-parent {
+  display: grid;
+  grid-template-columns: 0.8fr 0.9fr;
+  gap: 1.2rem;
+}
+.ready-section {
+  background-color: var(--royalblue);
+  padding-top: 15rem;
+}
+.ready-text {
+  padding-left: 12.8rem;
+}
+.launch-text {
+  font-size: 6.2rem;
+  color: var(--darkblue);
+}
+.app {
+  color: var(--darkblue);
+  font-size: 6.2rem;
+  margin-bottom: 2.8rem;
+}
+.find-text {
+  font-size: 1.8rem;
+  margin-bottom: 3.6rem;
+  color: var(--lightblue);
+}
+form {
+  position: relative;
+}
+form input {
+  margin-bottom: 2.8rem;
+  padding: 1.6rem 0;
+  padding-left: 4.8rem;
+  border-radius: 25px;
+  width: 100%;
+  border: none;
+  border-left: 3px solid #d29a9b;
+}
+.form-mail {
+  font-size: 1.6rem;
+  color: rgb(212, 212, 212);
+  position: absolute;
+  left: 2rem;
+  top: 21%;
+  z-index: 1;
+}
+.form-arrow {
+  font-size: 1.8rem;
+  color: var(--pinq);
+  position: absolute;
+  right: 3rem;
+  top: 21%;
+  z-index: 1;
+}
+.feedback {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.hero-img {
+  width: 100%;
+}
+.customer-images img {
+  border-radius: 50%;
+  height: 4.5rem;
+  width: 4.5rem;
+  border: 3px solid white;
+  margin-right: -2rem;
+}
+.customer-images img:last-child {
+  margin: 0;
+}
+
+.result--feedback .num {
+  font-size: 2.4rem;
+  color: var(--darkblue);
+  font-weight: 700;
+}
+.result--feedback .feed {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+/* ************************ */
+/* how it work section */
+/* ************************ */
+/*- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 20 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 150
+*/
+
+/*- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+.how-it-work {
+  padding: 9.6rem 0;
+}
+
+.feature-box {
+  margin-bottom: 2.4rem;
+}
+.feature-describtion {
+  color: var(--gray);
+}
+
+.text-box-work {
+  background-color: white;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 6px;
+  padding: 3.6rem 4rem;
+}
+.work-icon {
+  font-size: 1.5rem;
+  color: white;
+  padding: 1.5rem;
+  margin-bottom: 2.6rem;
+  border-radius: 50%;
+}
+.fa-bolt-lightning {
+  background-color: #2fadfd;
+}
+.fa-house-chimney {
+  background-color: #ea4c88;
+}
+.fa-link {
+  background-color: #3678fe;
+}
+.fa-bell {
+  background-color: #f77942;
+}
+.fa-gear {
+  background-color: #6b88f7;
+}
+.fa-lock {
+  background-color: #3bb094;
+}
+.fast {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--darkblue);
+  margin-bottom: 1.4rem;
+}
+.work-dsecribtion {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin-bottom: 1.8rem;
+  color: var(--gray);
+}
+.readmore-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+.arrow-read {
+  font-size: 1.4rem;
+  color: var(--gray);
+}
+.read-more {
+  text-decoration: none;
+  color: var(--gray);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/* ************************ */
+/* Marketing  */
+/* ************************ */
+/*- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 20 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 150
+*/
+
+/*- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+.marketing-section {
+  padding: 8rem 0;
+}
+.grid-marketing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  background-color: #ecf1f2;
+  overflow: hidden;
+  padding: 8rem 0;
+}
+.marketing-img-box {
+  position: relative;
+}
+.marketing-img {
+  width: 90%;
+  position: absolute;
+  top: -240px;
+  left: 75px;
+}
+
+.marketing-text-box {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.marketing {
+  display: block;
+  color: #fa7694;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1.8rem;
+}
+.market-head {
+  color: var(--darkblue);
+  margin-bottom: 2rem;
+}
+.marketing-text {
+  font-size: 1.6rem;
+  color: var(--gray);
+  line-height: 1.4;
+  margin-bottom: 2.6rem;
+  max-width: 95%;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.option-text {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+.option-text .heading-third {
+  color: var(--darkblue);
+  margin-bottom: 0.8rem;
+}
+.option-text i {
+  padding: 0.4rem;
+  font-size: 1.6rem;
+  color: white;
+  background-color: #36c56d;
+  border-radius: 50%;
+}
+.option-describtion {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: var(--gray);
+}
+/* ************************ */
+/* Need section  */
+/* ************************ */
+/*- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 20 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 150
+*/
+
+/*- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+.need-section {
+  background-color: #182d60;
+  padding: 9.6rem 0;
+}
+.need-us {
+  color: white;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+.need-describtion {
+  color: white;
+  text-align: center;
+  margin-bottom: 5.5rem;
+}
+.need-container {
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+.advantage-box {
+  margin-bottom: 3.2rem;
+  display: inline-block;
+  border: 1px solid #595d64;
+  padding: 2.4rem;
+  border-radius: 6px;
+}
+.step-box {
+  display: flex;
+  align-items: baseline;
+  gap: 1.2rem;
+}
+.fa-circle {
+  font-size: 1.8rem;
+  border-radius: 50%;
+}
+.circle-red {
+  color: #ff3e66;
+  box-shadow: 0 0 0 0.4rem rgba(255, 62, 101, 0.295);
+}
+.circle-blue {
+  color: #2ea7f2;
+  box-shadow: 0 0 0 0.4rem rgba(46, 167, 242, 0.295);
+}
+.circle-green {
+  color: #34bf49;
+  box-shadow: 0 0 0 0.4rem rgba(52, 191, 73, 0.295);
+}
+
+.details {
+  color: white;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.advantage-desc {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gray);
+}
+
+/* ************************ */
+/* Achievment Section  */
+/* ************************ */
+/*- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 20 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 150
+*/
+
+/*- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+.achievment-section {
+  padding: 9.6rem 0;
+}
+
+.achievment-desc {
+  margin-bottom: 4.8rem;
+}
+
+.achieve-icon {
+  height: 70%;
+  margin-bottom: 0.7rem;
+}
+.achieve-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 0.23fr);
+  gap: 9rem;
+  justify-content: center;
+  align-items: center;
+}
+.achieve-box {
+  text-align: center;
+  padding: 3.6rem 0rem;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.2);
+}
+.achieve-box .num {
+  display: block;
+  font-size: 3.6rem;
+  margin-bottom: 0.7rem;
+  color: var(--darkblue);
+}
+.achive-install {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+/* ************************ */
+/* explain-section */
+/* ************************ */
+/*- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 20 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 150
+*/
+
+/*- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+.explain-section {
+  padding-bottom: 9.6rem;
+}
+.grid-explain {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  gap: 2.4rem;
+}
+.explain-imgs {
+  margin-bottom: 3.2rem;
+}
+.img-video {
+  margin-bottom: 2.8rem;
+  width: 100%;
+}
+.explain-box {
+  padding-left: 9rem;
+}
+.slide-head {
+  font-size: 3rem;
+  color: var(--darkblue);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.explain-desc {
+  font-size: 1.7rem;
+  margin-bottom: 2.8rem;
+  line-height: 1.4;
+  max-width: 95%;
+  color: var(--gray);
+}
+.img-slide {
+  width: 100%;
+}
+.img-arrow-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+.arrows-icons {
+  margin-left: auto;
+}
+.explain-icons i {
+  color: var(--lightblue);
+}
+
+/* ************************ */
+/* Download Section */
+/* ************************ */
+
+.download-section {
+  padding: 9.6rem 0;
+  background-color: #ecf1f2;
+}
+.download-section span {
+  display: block;
+  color: #fa7694;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+}
+.download-head {
+  color: var(--darkblue);
+  max-width: 35%;
+  line-height: 1.1;
+  margin-bottom: 1.4rem;
+}
+.download-desc {
+  color: var(--gray);
+  font-size: 1.6rem;
+  max-width: 40%;
+  margin-bottom: 3.2rem;
+  line-height: 1.4;
+}
+.options-download {
+  display: flex;
+  gap: 1.6rem;
+}
+.apple-img {
+  height: 5.4rem;
+}
+.android {
+  height: 5.4rem;
+  background-color: white;
+}
+/* ************************ */
+/* Price Section */
+/* ************************ */
+/*- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 20 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 150
+*/
+
+/*- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+.pricing-section {
+  padding: 9.6rem 0;
+}
+.price-head {
+  margin-bottom: 1.6rem;
+}
+.price-text {
+  margin-bottom: 4.8rem;
+}
+.subscribe {
+  border: 2px solid rgb(206, 206, 206);
+  display: inline-block;
+  border-radius: 100px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.3rem;
+  margin-bottom: 3.2rem;
+}
+.step-price {
+  display: flex;
+}
+.month-subsribe {
+  all: unset;
+  background-color: #ff3e66;
+  color: white;
+  border-radius: 100px;
+  padding: 1rem 2.2rem;
+  cursor: pointer;
+}
+
+.year-subscribe {
+  all: unset;
+  padding: 1rem 2.2rem;
+  border-radius: 100px;
+  cursor: pointer;
+  color: var(--gray);
+}
+.price-box {
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 6px;
+  padding: 4.8rem 3.2rem;
+}
+.plan-name {
+  color: var(--darkblue);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.plan-price {
+  color: var(--darkblue);
+  font-weight: 700;
+  font-size: 3.8rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.dollar {
+  display: inline-block;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--darkblue);
+  margin-top: 0.3rem;
+}
+.num-price {
+  margin-left: 0.4rem;
+}
+.month-plan {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--gray);
+  margin-top: auto;
+}
+.plan-text {
+  font-size: 1.4rem;
+  margin-bottom: 2.8rem;
+  border-bottom: 1px solid rgb(201, 201, 201);
+  padding-bottom: 2.6rem;
+  color: var(--gray);
+}
+.list {
+  margin-bottom: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.list i {
+  font-size: 1.2rem;
+  background-color: #ecf1f2;
+  padding: 0.6rem;
+  border-radius: 50%;
+  color: #7ca7f8;
+}
+.list-color i {
+  color: #59cf85;
+}
+.list span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--lightblue);
+}
+
+.most-populer {
+  box-shadow: 0 3.4rem 4.8rem rgba(0, 0, 0, 0.09);
+  border: 2px solid transparent;
+  border-top: 3px solid #ff3e66;
+  padding: 4.7rem 3.2rem;
+  position: relative;
+}
+.most-populer::after {
+  content: "Most Popular";
+  display: inline-block;
+  background-color: #2a6cf4;
+  color: white;
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 0.6rem 1.8rem;
+  border-radius: 100px 0 0 100px;
+  position: absolute;
+  top: 2rem;
+  right: 0;
+}
+.choose-btn {
+  background-color: #ff3e66;
+  color: white;
+  border: 2px solid transparent;
+}
+/* ************************ */
+/* Review Section */
+/* ************************ */
+/*- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 20 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 150
+*/
+
+/*- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+.review-section {
+  padding: 9.6rem 0;
+  color: white;
+}
+.review-box {
+  background-image: url(testimonial-bg-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 45rem;
+  display: grid;
+  grid-template-columns: 30fr 70fr;
+  column-gap: 6rem;
+  align-items: center;
+}
+.review-details {
+  justify-self: end;
+}
+.review-img {
+  height: 13.5rem;
+  width: 13.5rem;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
+}
+.stars-review {
+  color: rgb(255, 223, 45);
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+.review-nums {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #b1cbfa;
+}
+
+.review-text {
+  font-size: 2rem;
+  line-height: 1.6;
+  width: 81%;
+  margin-bottom: 1.8rem;
+}
+.person-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+.reviewer {
+  display: flex;
+  align-items: center;
+  width: 85%;
+}
+.person-job {
+  font-size: 1.4rem;
+  color: #b1cbfa;
+  font-weight: 500;
+}
+
+/* ************************ */
+/* platform Section */
+/* ************************ */
+/*- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 20 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 150
+*/
+
+/*- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+.platforms-section {
+  padding-bottom: 9.6rem;
+}
+.sponser-img {
+  background-color: white;
+  padding: 2.4rem 2.8rem;
+  border-radius: 6px;
+  box-shadow: 0 3.4rem 4.8rem rgba(0, 0, 0, 0.2);
+}
+.sponser-box-top {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+.sponser-box-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 5.4rem;
+  width: 100%;
+}
+
+/* ************************ */
+/* Footer */
+/* ************************ */
+/*- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 20 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 150
+*/
+
+/*- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+.footer {
+  padding: 9.6rem 0;
+  background-color: #ecf1f2;
+}
+.grid-footer {
+  display: grid;
+  grid-template-columns: 1.4fr 0.7fr 1fr 0.9fr;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 9.6rem;
+  margin-bottom: 3.6rem;
+}
+.logo-footer {
+  display: block;
+  margin-bottom: 2.4rem;
+}
+.logo-text {
+  color: var(--gray);
+  font-size: 1.6rem;
+  width: 70%;
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+}
+.read-more {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 2.6rem;
+}
+.arrow-footer {
+  font-size: 1.6rem;
+}
+.read-more span {
+  font-size: 1.6rem;
+  color: var(--darkblue);
+}
+
+.social-links {
+  display: flex;
+  gap: 0.8rem;
+}
+.social-links i {
+  font-size: 1.8rem;
+  color: var(--darkblue);
+  background-color: white;
+  border-radius: 6px;
+  padding: 0.7rem 1rem;
+}
+.footer-head {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--darkblue);
+  margin-bottom: 2.4rem;
+}
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gray);
+}
+.info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+  font-style: normal;
+}
+.info i {
+  font-size: 1.5rem;
+  color: #489af8;
+}
+.info:last-child {
+  margin-bottom: 0;
+}
+.address {
+  font-size: 1.6rem;
+  width: 65%;
+  line-height: 1.6;
+  color: var(--gray);
+}
+.fa-location-dot {
+  margin-bottom: auto;
+}
+
+.download-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright {
+  font-size: 1.8rem;
+  color: var(--gray);
+  line-height: 1.6;
+}

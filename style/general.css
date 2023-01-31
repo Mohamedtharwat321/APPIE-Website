@@ -1,0 +1,171 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+
+
+- Font weights
+Default: 400
+
+
+- Line heights
+Default: 1
+
+
+- Letter spacing
+
+
+--- 02 COLORS
+
+- Primary: 
+- Tints:   
+- Shades: 
+- Accents:
+- Greys
+#888
+
+#182D60
+#ECF1F2
+#BF5857
+#3D9DE1
+#8C9EBE
+#DDAF55
+#D29A9B
+#ECC5A4
+#BCC6D1
+
+
+--- 03 SHADOWS
+
+
+--- 04 BORDER-RADIUS
+
+
+
+--- 05 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 20 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 150
+*/
+
+:root {
+  --darkblue: #0f1033;
+  --lightblue: #183160;
+  --pinq: #f23d6d;
+  --royalblue: #eff0f6;
+  --gray: #767e8e;
+}
+/* ************************ */
+/* General Component */
+/* ************************ */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  line-height: 1;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+.grid {
+  display: grid;
+  gap: 3.2rem;
+}
+.grid--center-v {
+  align-items: center;
+}
+.grid--center-h {
+  justify-content: center;
+}
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3--cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.heading-secondry {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+.heading-third {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+.btn {
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+
+.arrows-icons i {
+  border: 1px solid rgb(221, 221, 221);
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 50%;
+  padding: 1.4rem 1.6rem;
+}
+.arrows-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.features {
+  color: var(--darkblue);
+  font-size: 1.5rem;
+  text-decoration: none;
+  border: 2px solid rgb(207, 207, 207);
+  padding: 1.4rem 2.8rem;
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  color: var(--gray);
+  line-height: 1.3;
+}
+.work {
+  color: var(--darkblue);
+  margin-bottom: 1.6rem;
+  line-height: 1.2;
+}
+
+.center-text {
+  text-align: center;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5rem rgba(15, 16, 51, 0.596);
+}
+
+
+.choose-btn:focus,
+.year-subscribe:focus,
+.getsarted:focus,
+.month-subsribe:focus
+{
+  outline: none !important;
+  box-shadow: 0 0 0 0.4rem rgba(242, 61, 109, 0.596) !important;
+}
