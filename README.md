@@ -35,7 +35,9 @@ Appie is a modern, responsive landing page template designed for mobile applicat
 
 ## Technologies Used
 - **HTML5**: For structuring the content.
-- **Tailwind**: For styling and layout, including media queries for responsiveness.
+- **CSS**: For styling and layout, including media queries for responsiveness.
+- **JavaScript**: For interactive elements
+- **AOS (Animate On Scroll)**: For scroll animations
 - **Font Awesome**: For icons.
 - **Google Fonts**: For typography (if used).
 
@@ -44,7 +46,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Mohamedtharwat321/Solar-Landing-Page.git
+   git clone https://github.com/Mohamedtharwat321/APPIE-Website.git
 To run this project locally, follow these steps:
 
 ## Usage
